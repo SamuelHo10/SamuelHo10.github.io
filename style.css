@@ -1,0 +1,135 @@
+
+:root {
+    --top-bar-element-margin: 5%;
+    --top-bar-height: 60px;
+    --column-margin: 5%;
+}
+
+/* Geheral */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Top bar styles */
+
+.bar {
+    background-color: white;
+    color: black;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--top-bar-height);
+}
+
+.fancy-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 1.5em;
+    color: black;
+    margin-right: auto;
+    margin-left: var(--top-bar-element-margin);
+}
+
+.bar-button-container {
+    margin-left: auto;
+    margin-right: var(--top-bar-element-margin);
+}
+
+/* Button styles */
+
+.button {
+    background-color: transparent;
+    color: black;
+    border: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 20px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    color: gray;
+}
+
+
+/* Content styles */
+
+.row {
+    background: lightgray;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--top-bar-height);
+}
+
+.column {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture {
+    width: calc(100% - var(--column-margin)*1.5);
+    height: calc(100% - var(--column-margin)*1.5);
+    margin: var(--column-margin);
+    margin-right: calc(var(--column-margin)/2);
+}
+
+.text-box {
+    background-color: white;
+    color: black;
+    width: calc(100% - var(--column-margin)*1.5);
+    height: calc(100% - var(--column-margin)*1.5);
+    margin: var(--column-margin);
+    margin-left: calc(var(--column-margin)/2);
+    font-size: 1.5em;
+    padding: 30px; 
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+    .row {
+        flex-direction: column; /* Stack columns vertically */
+    }
+    .column {
+        width: 100%; /* Ensure each column takes full width */
+        display: block;
+    }
+    .text-box{
+        margin-left: var(--column-margin);
+        margin-right: var(--column-margin);
+        width: calc(100% - var(--column-margin)*2);
+        height: calc(100% - var(--column-margin)*2);
+    }
+    .profile-picture {
+        margin-right: var(--column-margin);
+        margin-left: var(--column-margin);
+        margin-bottom: 0;
+        width: calc(100% - var(--column-margin)*2);
+        height: calc(100% - var(--column-margin)*2);
+    }
+}
+
+
+
