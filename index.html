@@ -2,38 +2,49 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Samuel's Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Personal Website</title>
+
+    <script>
+        $(function () {
+            $(".header").load("header.html");
+            $(".footer").load("footer.html");
+        });
+    </script>
+
 </head>
 
 <body>
-    <div class="bar">
-        <span class="fancy-text">Sam's Site</span>
-        <div class="bar-button-container">
-            <button class="button">Home</button>
-            <button class="button">About</button>
-            <button class="button">Contact</button>
-        </div>
-    </div>
+    <div class="header"></div>
+
     <div class="row">
         <div class="column">
-            <img src="./img/profile.png" class="profile-picture">
+            <img src="./img/profile.jpg" class="profile-picture">
         </div>
         <div class="column">
 
             <div class="text-box">
                 <h2>Samuel Ho</h2><br>
-                
-                I am currently a second year Engineering Science student at University of Toronto who wishes to go into Engineering Physics. <br>  <br>
-                
-                Although I have not decided my life path yet, I am interested about everything in math and science from optics to machine learning to quantum mechanics.
+
+                I am a second year Engineering Science student at University of Toronto who is going into
+                Engineering Physics. <br> <br>
+
+                I am interested in everything about math and science from
+                optics to machine learning to quantum mechanics.
                 <br> <br>
 
                 Some of my hobbies include playing Minecraft, watching anime, and taking walks outside.
             </div>
         </div>
     </div>
+
+    <div class="footer"></div>
 
 </body>
 
