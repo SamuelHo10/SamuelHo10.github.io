@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Samuel's Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        $(function () {
+            $(".header").load("header.html");
+            $(".footer").load("footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="header"></div>
+
+    <div class="row">
+        <div class="box text">
+            <h2>Notes</h2>
+            <p>The following are some notes I have taken during my time at university.</p>
+
+            <h3>Math</h3>
+
+            <ul>
+                <li><a href="/pdfs/calculus_notes.pdf" download="calculus_notes.pdf">Calculus</a> - Notes from ESC194 and ESC195.</li>
+            </ul>
+
+            <h3>Electrical and Computer Engineering</h3>
+
+            <ul>
+                <li><a href="/pdfs/ece_notes.pdf" download="ece_notes.pdf">Circuits</a> - Notes from ECE195.</li>
+            </ul>
+
+            <h3>Chemistry</h3>
+
+            <ul>
+                <li><a href="/pdfs/molecules_and_materials_notes.pdf" download="molecules_and_materials_notes.pdf">Molecules and Materials</a> - Notes from MSE160.</li>
+                <li><a href="/pdfs/analytical_chemistry.pdf" download="analytical_chemistry.pdf">Analytical Chemistry</a> - Unfinished notes about a couple analytical chemistry techniques.</li>
+            </ul>
+
+            <h3>Civil Engineering</h3>
+
+            <ul>
+                <li><a href="/pdfs/civ_notes.pdf" download="civ_notes.pdf">Civil Engineering</a> - Notes from CIV102.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+
+</body>
+
+</html>

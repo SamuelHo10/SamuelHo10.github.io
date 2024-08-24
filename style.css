@@ -1,11 +1,11 @@
 :root {
     --top-bar-element-margin: 5%;
     --top-bar-height: 60px;
-    --column-margin: 5%;
+    --column-margin: 30px;
     --hover-opacity: 0.7;
 }
 
-/* Geheral */
+/* General */
 
 
 body {
@@ -19,12 +19,18 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    padding-top: calc(var(--top-bar-height ) + var(--column-margin)/2);
+    margin: 0;
 }
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+}
+
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 /* Top bar styles */
@@ -85,66 +91,67 @@ body {
     width: 70%;
     display: flex;
     justify-content: center;
-    margin-top: var(--top-bar-height);
+    padding-right: calc(var(--column-margin)/2);
+    padding-left: calc(var(--column-margin)/2);
 }
 
 .column {
-    flex: 50%;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.profile-picture {
-    width: calc(100% - var(--column-margin)*1.5);
-    height: calc(100% - var(--column-margin)*1.5);
-    margin: var(--column-margin);
-    margin-right: calc(var(--column-margin)/2);
-    border: 10px solid white;
-}
-
-.text-box {
+.box {
     background-color: white;
     color: black;
-    width: calc(100% - var(--column-margin)*1.5);
-    height: calc(100% - var(--column-margin)*1.5);
-    margin: var(--column-margin);
-    margin-left: calc(var(--column-margin)/2);
-    font-size: 1.5em;
+    width: calc(100% - var(--column-margin));
+    flex: 1;
+    margin: calc(var(--column-margin)/2);
+}
+
+.text {
+    font-size: 1.2em;
     padding: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     word-wrap: break-word;
     box-sizing: border-box;
 }
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Adjust the gap between tags as needed */
+}
+
+.tag {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 1em;
+    display: inline-block;
+    margin-bottom: 15px
+}
+
 
 @media screen and (max-width: 1200px) {
     .row {
         flex-direction: column;
         width: 100%;
     }
-
     .column {
         width: 100%;
-        display: block;
-    }
-
-    .text-box {
-        margin-left: var(--column-margin);
-        margin-right: var(--column-margin);
-        width: calc(100% - var(--column-margin)*2);
-        height: calc(100% - var(--column-margin)*2);
-    }
-
-    .profile-picture {
-        margin-right: var(--column-margin);
-        margin-left: var(--column-margin);
-        margin-bottom: 0;
-        width: calc(100% - var(--column-margin)*2);
-        max-height: calc(100% - var(--column-margin)*2);
     }
 }
 
-
 .footer {
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-bar {
     background-color: white;
     text-align: center;
     width: 100%;
@@ -152,7 +159,6 @@ body {
     justify-content: center;
     align-items: center;
     height: var(--top-bar-height);
-    margin-top: auto;
 }
 
 /* Icons */
