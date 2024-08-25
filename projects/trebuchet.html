@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Samuel's Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        $(function () {
+            $(".header").load("/header.html");
+            $(".footer").load("/footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="header"></div>
+
+    <div class="row">
+        <div class="box text">
+            <h2>Physics Class Final Project: Floating Arm Trebuchet</h2>
+        </div>
+    </div>
+
+    <div class="row" style="width: 35%;">
+        <div class="column">
+            <div class="box">
+                <iframe src="https://drive.google.com/file/d/13biEg5c1RZEOTPe4EA2KFjlWGYUd12Un/preview" allow="autoplay" class="video"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box text">
+            <p>
+                I am very grateful for having a great highschool physics teacher, Mr. Kanowitz, who was very passionate about physics. He provided us with the opportunity to build a trebuchet for our final project. Instead of building a regular trebuchet, my group decided to build a floating arm trebuchet. We were inspired to build it based on videos we saw on online, and we tried to optimize the design using python and Lagrangian mechanics based on a <a href="https://www.benchtophybrid.com/How_to_Simulate_a_Trebuchet_Part3.pdf">tutorial</a> we found online. Our code simulation was pretty amateurish because we were still unknowledgeable highschool students at this point, and we did not know much about Lagrangian mechanics.
+            </p>
+            <p>
+                Once we settled on a design which satisfied the assignments's size constraints, we got straight to work at one of my group member's house. We mostly just improvised as we went along. At the end, our trebuchet was able to launch a tennis ball well over 20 meters using a counterweight of 10 pounds.
+            </p>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+</body>
+
+</html>
