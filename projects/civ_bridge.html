@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Samuel's Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        $(function () {
+            $(".header").load("/header.html");
+            $(".footer").load("/footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="header"></div>
+
+    <div class="row">
+        <div class="box text">
+            <h2>Matboard Girder Bridge</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="box">
+                <img src="/img/constructing_bridge.png" class="image">
+            </div>
+        </div>
+        <div class="column">
+            <div class="box">
+                <img src="/img/bridge_drawing.webp" class="image">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box text">
+            <p>
+                The objective of this project was to build a box girder bridge out of a 830 mm x 1016 mm piece of
+                matboard and contact cement that could support the could support the heaviest train across a 1260mm gap. We used Python to write a
+                program designed to optimize the most crucial aspects of our design, specifically the shear,
+                compression, tension, and thin plate buckling safety factors, while minimizing the volume of our bridge
+                and of course maximizing the force that it can support.
+            </p>
+            <p>
+                Our final design was predicted to be able to withstand a maximum load of 1065 N and used 87.3% of the matboard provided. However, on the day of the competition, our bridge failed on the first train at 400 N. We found out that this was due to the fact that the contact cement had not dried &#128557;.  From this failure, we learned the importance of proper construction and the importance of testing components before assembling everything together.
+            </p>
+            <p>
+                The Python code used to optimize our bridge design can be found <a href="https://github.com/SamuelHo10/CIV102-Bridge-Project">here</a>.
+            </p>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+</body>
+
+</html>
