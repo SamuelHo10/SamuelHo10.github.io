@@ -5,6 +5,8 @@ var projects = [
     { name: "Praxis II Project: Worm Wheel 360", image: "./img/praxis_II.png", link: "./projects/praxis_II.html", year: 2024, tags: ["Course Project"] },
     { name: "Matboard Girder Bridge", image: "./img/civ_bridge.png", link: "./projects/civ_bridge.html", year: 2023, tags: ["Course Project", "Civil Engineering"] },
     { name: "UTRA SUMO Robot", image: "./img/utra_sumo.jpg", link: "./projects/utra_sumo.html", year: 2024, tags: ["Club Project", "Electronics"] },
+    { name: "Trebuchet", image: "./img/trebuchet.jpg", link: "./projects/trebuchet.html", year: 2022, tags: ["Highschool Project"] },
+    { name: "Font Recognition AI", image: "./img/matcha_font.png", link: "./projects/matcha_font.html", year: 2024, tags: ["Course Project", "Programming"] },
 ];
 
 function get_column_string(project) {

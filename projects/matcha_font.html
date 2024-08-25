@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Samuel's Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        $(function () {
+            $(".header").load("/header.html");
+            $(".footer").load("/footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="header"></div>
+
+    <div class="row">
+        <div class="box text">
+            <h2>APS360 Final Project: Matcha Font</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="box">
+                <iframe src="https://drive.google.com/file/d/1l0sNwgCo1kXO_wl91aPw87GwH1FNCTSo/preview" allow="autoplay" class="video"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box text">
+            <p>
+                For the final project of APS360: Applied Fundamentals of Deep Learning, my group and I created a font detection AI. Our group did not have sufficient computing equipment such as powerful GPUs, so the model took ages to train. We spent ages trying to pre-train an autoencoder to implement it into our model. However, no matter what we tried, it always performed worse than our baseline CNN. For the final model, We ended up simply increasing the size of our CNN and included normalization and dropout within our layers. We learned that, often times simpler models work better. 
+            </p>
+            <p>
+                More information about the project can be found on our <a href="/pdfs/aps360_final_report.pdf" download>final report</a>. 
+            </p>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+</body>
+
+</html>
