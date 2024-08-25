@@ -120,6 +120,20 @@ p {
     box-sizing: border-box;
 }
 
+.video {
+    aspect-ratio: 4/3;
+    width: 100%;
+    display: block; 
+    border: 10px solid white;
+}
+
+.slide {
+    aspect-ratio: 960/569;
+    width: 100%;
+    display: block;
+    border: 10px solid white;
+}
+
 .tags {
     display: flex;
     flex-wrap: wrap;
@@ -136,7 +150,7 @@ p {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .row {
         flex-direction: column;
         width: 100%;
