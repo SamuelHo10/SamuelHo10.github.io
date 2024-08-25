@@ -1,7 +1,5 @@
 projects to add:
 
-praxis II
-Civ Bridge
 UTRA Sumo
 Paint ARO
 Trebuchet

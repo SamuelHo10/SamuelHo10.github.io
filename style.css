@@ -134,6 +134,12 @@ p {
     border: 10px solid white;
 }
 
+.image {
+    width: 100%;
+    display: block;
+    border: 10px solid white;
+}
+
 .tags {
     display: flex;
     flex-wrap: wrap;

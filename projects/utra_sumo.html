@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Samuel's Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        $(function () {
+            $(".header").load("/header.html");
+            $(".footer").load("/footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="header"></div>
+
+    <div class="row">
+        <div class="box text">
+            <h2>University of Toronto Robotics Association SUMO Bot</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="box">
+                <img src="/img/sumo_bot.jpg" class="image">
+            </div>
+        </div>
+        <div class="column">
+            <div class="box">
+                <img src="/img/sumo_cad.png" class="image">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box text">
+            <p>
+                For the 2023-2024 academic year, I joined the University of Toronto Robotics Association (UTRA) and participated in the SUMO Bot competition. The goal of the competition was to design and build a robot that could push the opponent robot out of the ring. The robot had to be autonomous and could not be controlled by a human operator. It also had to be under a certain size and weight limit.
+            </p>
+            <p>
+                For this project, I worked in a group of 4. It was my first time working with CAD software, so we tried optimizing a pretty simple design using an ultrasonic sensor and a motor they provided us with. However, tragedy struck right before competition: a copper pin broke off the motor, and we weren't able to solder it back on. We ended up going to a nearby store to buy a new motor, but although it looked identical, a few of the dimensions were slightly off by half a millimeter. This caused our wheels to constantly come loose during the competition. In the end, at least our bot did not place last in the competition (we ranked somewhere in the middle).
+            </p>
+            <p>
+                Next time, I will definitely not use cheap motors with weak copper pin connections. 
+            </p>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+</body>
+
+</html>
