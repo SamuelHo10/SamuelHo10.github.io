@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Samuel's Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        $(function () {
+            $(".header").load("/header.html");
+            $(".footer").load("/footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="header"></div>
+
+    <div class="row">
+        <div class="box text">
+            <h2>2D Rigidbody Physics Engine</h2>
+        </div>
+    </div>
+
+    <div class="row" style="width: 35%;">
+        <div class="column">
+            <div class="box">
+                <iframe src="https://drive.google.com/file/d/1XwcWMLr_N0K43W_4InzYg94XmlZJfilX/preview" allow="autoplay"
+                    class="video"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box text">
+            <p>
+                The 2D rigidbody physics engine is coded from scratch using Java with the swing library for graphics. I implemented the Separating Axis Theorem (SAT) to detect collisions between convex polygons and used a clipping
+                algorithm to determine collision points. For collision resolution, I followed online <a href="https://code.tutsplus.com/how-to-create-a-custom-2d-physics-engine-oriented-rigid-bodies--gamedev-8032t">tutorials</a> which used an impulse-based approach.
+            </p>
+            <p>
+                Furthermore, for my grade 12 computer science final project, our group worked on simulated celestial bodies and their orbiting paths in space (using the 2D physics engine). Sadly, I lost the code for that project after switching laptops :(
+            </p>
+            <p>
+                The code, which is still mostly uncommented, can be found <a href="https://github.com/SamuelHo10/Java-Physics-Engine">here</a>.
+            </p>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+    <script>
+
+
+    </script>
+</body>
+
+</html>

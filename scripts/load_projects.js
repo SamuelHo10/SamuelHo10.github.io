@@ -1,6 +1,8 @@
 var projects = [
-    { name: "LED Cube", image: "./img/led_cube.png", link: "./projects/led_cube.html", year: 2022, tags: ["Hobby Project", "Electronics"] }
-
+    { name: "LED Cube", image: "./img/led_cube.png", link: "./projects/led_cube.html", year: 2022, tags: ["Hobby Project", "Electronics"] },
+    { name: "2D Rigidbody Physics Engine", image: "./img/physics_engine.jpg", link: "./projects/physics_engine.html", year: 2022, tags: ["Hobby Project", "Programming", "Highschool Project"] },
+    { name: "Praxis I Project: Plant Humidifier", image: "./img/praxis_I.png", link: "./projects/praxis_I.html", year: 2023, tags: ["Course Project", "Group Project"] },
+    { name: "Praxis II Project: Worm Wheel 360", image: "./img/praxis_II.png", link: "./projects/praxis_II.html", year: 2024, tags: ["Course Project", "Group Project"] }
 ];
 
 function get_column_string(project) {
