@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Samuel's Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        $(function () {
+            $(".header").load("/header.html");
+            $(".footer").load("/footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="header"></div>
+
+    <div class="row">
+        <div class="box text">
+            <h2>Sullan Lab Research Projects</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="box">
+                <img src="/img/microfluidics.jpg" class="image">
+                <div class="text" style="text-align: center;">
+                    Microfluidics Setup
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="box">
+                <img src="/img/afm.jpg" class="image">
+                <div class="text" style="text-align: center;">
+                    Atomic Force Microscope
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box text">
+            <p>
+                I am very grateful for the opportunity to work with at the Sullan Lab. Everyone was very kind and welcoming, and I learned a lot about the research process. 
+            </p>
+            <p>
+                I was tasked to code an application in python to analyze AFM single-cell force spectroscopy data. I used the Tkinter library for UI and the Pandas library for data manipulation. The application is able to filter out outliers, generate graphs, and format the data on a spreadsheet in a way that is easily readable. The code can be found <a href="https://github.com/SamuelHo10/AFM">here</a>.
+            </p>
+            <p>
+                I also helped with the microfluidics project in the lab. The goal of the project was to create a microfluidics device coated with a metal which is able to help catalyze the degradation of methylene blue. The device was created by casting PDMS, coating the channel with PDA, and then adding a final coat of metal. The surface was then characterized using an AFM to determine if the metal attached onto the PDA successfully. To test out the device, we used a microplate UV-Vis reader to determine concentration of methylene blue before and after passing through the device.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="box">
+                <img src="/img/Ni_PDA_PDMS_500nm.png" class="image">
+                <div class="text" style="text-align: center;">
+                    Nickel + PDA + PDMS AFM Image
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="box">
+                <img src="/img/Zn_PDA_PDMS_500nm.png" class="image">
+                <div class="text" style="text-align: center;">
+                    Zinc + PDA + PDMS AFM Image
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer"></div>
+
+</body>
+
+</html>

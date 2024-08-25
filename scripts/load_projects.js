@@ -4,9 +4,11 @@ var projects = [
     { name: "Praxis I Project: Plant Humidifier", image: "./img/praxis_I.png", link: "./projects/praxis_I.html", year: 2023, tags: ["Course Project"] },
     { name: "Praxis II Project: Worm Wheel 360", image: "./img/praxis_II.png", link: "./projects/praxis_II.html", year: 2024, tags: ["Course Project"] },
     { name: "Matboard Girder Bridge", image: "./img/civ_bridge.png", link: "./projects/civ_bridge.html", year: 2023, tags: ["Course Project", "Civil Engineering"] },
+    { name: "Winnik Lab Research", image: "./img/fret.jpg", link: "./projects/winnik_lab.html", year: 2024, tags: ["Research Project", "Chemistry"] },
     { name: "UTRA SUMO Robot", image: "./img/utra_sumo.jpg", link: "./projects/utra_sumo.html", year: 2024, tags: ["Club Project", "Electronics"] },
     { name: "Trebuchet", image: "./img/trebuchet.jpg", link: "./projects/trebuchet.html", year: 2022, tags: ["Highschool Project"] },
     { name: "Font Recognition AI", image: "./img/matcha_font.png", link: "./projects/matcha_font.html", year: 2024, tags: ["Course Project", "Programming"] },
+    { name: "Sullan Lab Research", image: "./img/microfluidics.jpg", link: "./projects/sullan_lab.html", year: 2024, tags: ["Research Project", "Chemistry"] },
 ];
 
 function get_column_string(project) {
