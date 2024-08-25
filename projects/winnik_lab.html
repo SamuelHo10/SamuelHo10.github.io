@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Samuel's Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        $(function () {
+            $(".header").load("/header.html");
+            $(".footer").load("/footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="header"></div>
+
+    <div class="row">
+        <div class="box text">
+            <h2>Stratification of Acid Rich Oligomers</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="box">
+                <img src="/img/fret.jpg" class="image">
+            </div>
+        </div>
+        <div class="column">
+            <div class="box">
+                <img src="/img/paint_drying.jpg" class="image">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box text">
+            <p>
+                I worked with a third year undergraduate chemistry student and a PhD chemistry student to analyze paint samples provided by the chemical company BASF. For the first third of the term, I was watching paint dry. I prepared paint samples on cover slides and weighted them every hour as shown on the image to the right. If there is a greater decay of rate of evaporation over time, then that is a sign of stratification (separation into two components) since water would be trapped underneath the top layer of film. 
+            </p>
+            <p>
+                For the rest of the term, I ran UV-vis spectroscopy samples to determine dye content. Phen and Nben dyes were attached to the ARO and latex respectively, so dye content is critical for later FRET (Fluorescence Resonance Energy Transfer) analysis. 
+            </p>
+            <p>
+                I also helped with the FRET tests using a time-correlated single-photon counting device that can measure the fluorescence lifetime of a sample as shown on the image to the left. Using this technique, we can determine the efficiency of energy transfer between the dyes. A low efficiency would indicate that the dyes are not close enough to transfer energy, which would be a sign of stratification.
+            </p>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+</body>
+
+</html>
