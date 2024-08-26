@@ -1,9 +1,6 @@
 projects to add:
 
-UTRA Sumo
 Paint ARO
-Trebuchet
 Microfluidics
-Matcha Font
 
 maybe UTAT
