@@ -1,6 +1,6 @@
 :root {
     --top-bar-element-margin: 5%;
-    --top-bar-height: 60px;
+    --top-bar-height: 4em;
     --column-margin: 30px;
     --hover-opacity: 0.7;
 }
@@ -73,7 +73,7 @@ p {
     text-decoration: none;
     display: inline-block;
     font-family: serif;
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin: 20px 10px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -112,10 +112,10 @@ p {
 }
 
 .text {
-    font-size: 1.2em;
+    font-size: 1.5em;
     padding: 30px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
     word-wrap: break-word;
     box-sizing: border-box;
 }
@@ -183,7 +183,7 @@ p {
 
 /* Icons */
 .fa, .fab {
-    font-size: 30px;
+    font-size: 2em;
     text-align: center;
     text-decoration: none;
     color:black;
