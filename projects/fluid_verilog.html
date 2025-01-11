@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Samuel's Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        $(function () {
+            $(".header").load("/header.html");
+            $(".footer").load("/footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="header"></div>
+
+    <div class="row">
+        <div class="box text">
+            <h2>SystemVerilog Fluid Simulation</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="box">
+                <iframe src="https://drive.google.com/file/d/1CsYy8Zt6VRmXPiQ9usxuRLHgKSxmvhQv/preview" allow="autoplay"
+                    class="video"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box text">
+            <p>
+                In this project, I created the most basic Eulerian fluid simulation on the DE10-Lite FPGA board using SystemVerilog. The Gauss-Seidel method was used to ensure continuity of the the flow field. Advection, the change in velocity over time, was not implemented yet in this project. The digital design consists of three different dual-port block RAM layers. The first layer consists of the horizontal and vertical velocities at the edges of each cell, which are updated based on the Gauss-Seidel method and the cursor input. The magnitude and direction of the flow for each cell are then calculated using horizontal and vertical velocities and stored into the second second memory layer. Next, these values are used to update the third layer, which is a framebuffer for the VGA monitor. To draw the arrows, each pixel was projected onto the velocity vector, and if the distance to the vector was less than the line width, the pixel was colored in. This may have not been the most efficient way of drawing an arrow, but it was the most intuitive for me. The Quartus project, SystemVerilog code, and testbenches can be found <a
+                href="https://github.com/SamuelHo10/Verilog-Fluid-Simulation">here</a>.
+            </p>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+</body>
+
+</html>

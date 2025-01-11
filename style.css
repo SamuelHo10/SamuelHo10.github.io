@@ -118,6 +118,7 @@ p {
     padding-bottom: 0;
     word-wrap: break-word;
     box-sizing: border-box;
+    margin-bottom: 15px;
 }
 
 .video {
@@ -147,12 +148,12 @@ p {
 }
 
 .tag {
-    background-color: #f1f1f1;
+    background-color: #dfdfdf;
     border-radius: 3px;
     padding: 5px 10px;
     font-size: 1em;
     display: inline-block;
-    margin-bottom: 15px
+    margin-bottom: 0px
 }
 
 
